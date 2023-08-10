@@ -1,16 +1,35 @@
 fun main(args: Array<String>) {
 
-    print("Enter number to select bundle")
-    var input = readLine()!!.toInt()
+    println("Welcome to the MPESA bundle options!")
+    println("Select a bundle:")
+    println("1. Daily Bundle")
+    println("2. Weekly Bundle")
+    println("3. Monthly Bundle")
+    println("4. Exit")
 
-    when(input){
-        1 -> println("Data Deals")
-        2 -> println("Daily Bundles")
-        3 -> println("Weekly + Free YouTube")
-        4 -> println("GO MONTHLY")
+    var userInput = readLine()!!.toInt()
 
-        else -> println("Invalid input")
+    when (userInput) {
+        1 -> {
+            println("You've selected the Daily Bundle.")
+            when(1){
+                1 ->
+
+            }
+        }
+        2 -> {
+            println("You've selected the Weekly Bundle.")
+
+        }
+        3 -> {
+            println("You've selected the Monthly Bundle.")
+
+        }
+        4 -> {
+            println("Exiting the bundle options.")
+        }
+        else -> {
+            println("Invalid selection. Please choose a valid option.")
+        }
     }
-
-
 }
